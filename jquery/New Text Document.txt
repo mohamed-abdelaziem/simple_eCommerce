@@ -1,0 +1,5 @@
+Auto Complete
+/// <reference types="../@types/jquery" />
+
+
+https://oscarotero.com/jquery/

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body data-bs-spy="scroll">
+   
+
+
+<p class="alert alert-success d-none text-center text-black" id="modal">Welcome Bro</p>
+
+
+<div class="loading ">
+<div class="spinner">
+  <div class="rect1"></div>
+  <div class="rect2"></div>
+  <div class="rect3"></div>
+  <div class="rect4"></div>
+  <div class="rect5"></div>
+</div>
+</div>
+
+
+
+<div class="container my-4">
+
+
+      <div class="up mb-2">
+    <div class="parentOfCart">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span id="counter">0</span>
+    </div>
+  </div>
+
+
+
+  <div class="row g-3" id="myRow">
+  
+  </div>
+
+
+  </div>
+
+  <div class="bg-light my-5 p-4">
+ <h2 class="text-success fw-semibold text-center my-5">My Cart</h2>
+       <div class="d-flex flex-column flex-md-row row-gap-2 w-100 my-3 column-gap-2">
+      <div class=" flex-grow-1">
+
+  <input type="text" class="form-control" id="productName" placeholder="productName">
+</div>
+      <div class=" flex-grow-1">
+  <input type="number" class="form-control" id="productCount" placeholder="productCount">
+</div>
+
+<button class="btn btn-outline-success align-self-center" id="addProduct" style="height: 40px;">Add Product<i class="fa-solid fa-plus"></i></button>
+<button class="btn btn-outline-warning align-self-center" id="updateProduct" style="height: 40px;">Update Product<i class="fa-solid fa-pen"></i></button>
+    </div>
+    <p class="alert alert-danger text-center d-none" id="notFound">Not Found Product Please Data Again</p>
+    
+<p>Total Price : <span class="text-success fw-semibold d-none" id="price"></span></p>
+     <p class="alert alert-danger text-center fs-4 d-none" id="empty">Cart Is Empty</p>
+  <div id="cartParent" class="cartParent row g-3">
+
+
+ 
+
+      
+
+  </div>
+  <button class="btn btn-outline-danger w-100 mt-3 d-none" id="deleteAll">Delete All<i class="fa-solid fa-trash"></i></button>
+  </div>
+
+    <script src="/jquery/jquery-3.7.1.js"></script>
+    <!-- <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="main.js"></script>
+  </body>
+</html>
